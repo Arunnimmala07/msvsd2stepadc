@@ -34,7 +34,7 @@ Then, We need to install following softwares or tools.
 $ sudo apt-get update
 $ sudo apt-get upgrade
 ```
-- Then install the fillowing required file.
+- Then install the following required pakages.
 
 ```verilog
 $ sudo apt-get install m4
