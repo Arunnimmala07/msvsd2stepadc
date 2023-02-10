@@ -92,22 +92,6 @@ $  sudo make install
 - [More Info](http://repo.hu/projects/xschem/index.html)
 
 
-### Ngspice
-ngspice is the open-source spice simulator for electric and electronic circuits.
-
-Install steps:
-
-After downloading the tarball [from](https://sourceforge.net/projects/ngspice/files/) to a local directory, unpack it using(install 37 version):
-```verilog
-
- $ tar -zxvf ngspice-37.tar.gz
- $ cd ngspice-37
- $ mkdir release
- $ cd release
- $ ../configure  --with-x --with-readline=yes --disable-debug
- $ make
- $ sudo make install
-```
 
 ### open_pdk
 Open_PDKs is distributed with files that support the Google/SkyWater sky130 open process description https://github.com/google/skywater-pdk. Open_PDKs will set up an environment for using the SkyWater sky130 process with open-source EDA tools and tool flows such as magic, qflow, openlane, netgen, klayout, etc.
