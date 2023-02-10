@@ -1,14 +1,15 @@
 # msvsd2stepadc
+
 ## *Table of Contents*
 
-* [Week 0](#week-0)
+* [week 0 4to9Feb2023](#week-0-4to9Feb2023)
      + [Software Installation](#Software-Installation)
      + [Create inverter and perform pre-layout using xschem or ngspice](#Create-inverter-and-perform-pre-layout-using-xschem-or-ngspice)
 
 
 
 
-# Week 0
+# Week 0 4to9Feb2023
 ---
 As a preparation for the work, we are going to install the following software in Ubuntu 20.04. I created the scripts in the following numbered order, it is best if they are run in the same order.
 
