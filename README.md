@@ -57,7 +57,7 @@ Magic is an open-source VLSI layout tool.
 
 Install steps:
 ```verilog
-$  git clone git://opencircuitdesign.com/magic
+$  git clone https://github.com/RTimothyEdwards/magic
 $  cd magic
 $	 ./configure
 $  make
