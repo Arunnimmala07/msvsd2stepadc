@@ -2,8 +2,8 @@
 
 # Table of Contents
   * [week 0](#week-0)  
-  - [Software Installation](#Software-Installation)
-  - [Create inverter and perform pre-layout using xschem or ngspice](#Create-inverter-and-perform-pre-layout-using-xschem-or-ngspice)
+   - [Software Installation](#Software-Installation)
+   - [Create inverter and perform pre-layout using xschem or ngspice](#Create-inverter-and-perform-pre-layout-using-xschem-or-ngspice)
 
 
 
