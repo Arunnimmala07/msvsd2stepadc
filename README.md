@@ -114,7 +114,7 @@ Open_PDKs is distributed with files that support the Google/SkyWater sky130 open
 
 Install steps:
 ```verilog
-$  git clone git://opencircuitdesign.com/open_pdks
+$  git clone https://github.com/RTimothyEdwards/open_pdks
 $  cd open_pdks
 $	./configure --enable-sky130-pdk
 $  make
