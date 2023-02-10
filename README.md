@@ -10,9 +10,13 @@
 
 # week 0
 ---
-As a preparation for the work, we are going to install the following software in Ubuntu 20.04. I created the scripts in the following numbered order, it is best if they are run in the same order.
+In the week 0: we have to install linux Operting System: I installed: Ubuntu 20.04. 
 
-|	|Software|	Description|
+OS installation
+
+Then, We need to install following softwares or tools.
+
+|	S .No.|Software|	Description|
 | --- | --- | ---|
 |1	|magic|	Layout Editor|
 |2	|ngspice	|SPICE Simulation|
@@ -23,7 +27,7 @@ As a preparation for the work, we are going to install the following software in
 
 # Software Installation
 ---
-We have a windows machine, install Oracle virtual box with Ubuntu 20.04 - RAM at least 4GB, hard-disk atleast 120GB.
+
 
 - First update ubuntu with command 
 ```verilog
@@ -171,7 +175,7 @@ cd ~/software/ALIGN-public
 git clone https://github.com/ALIGN-analoglayout/ALIGN-pdk-sky130
 ```
 - If faced this error 
-![Screenshot (2367)](https://user-images.githubusercontent.com/120498080/217863997-011b9abe-ec8c-4bce-9721-8f49fa598f7e.png)
+
 - Solution
 ```
 # First update setuptools
@@ -202,18 +206,19 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/netgen//sky130A_setup.tcl .
 ```
 
 #### Checking if magic works
-![Screenshot (2349)](https://user-images.githubusercontent.com/120498080/216841828-3dfd5129-c4ad-4af6-997d-8c8634d1e13d.png)
+
 
 #### Checking if xschem works
-![Screenshot (2346)](https://user-images.githubusercontent.com/120498080/216841917-17b9de64-f540-4e59-ba36-c280df58d01f.png)
+
 
 #### Checking if netgen works
-![Screenshot (2347)](https://user-images.githubusercontent.com/120498080/216841939-96bf7b43-b927-4fce-93b9-8e35eb73e2cb.png)
+
 
 #### Checking if ngspice works
-![Screenshot (2348)](https://user-images.githubusercontent.com/120498080/216841960-9d9aa965-ac18-459c-9c5c-ed28e1804fde.png)
+
 
 ### Creating inverter schematic using xschem
+
 # Reference
 - [Installing Tools](https://github.com/yathAg/Physical_Verification_SKY130A#Chapter-0---Getting-the-tools)
 - [Installing ALIGN](https://github.com/sanampudig/OpenFASoC/tree/main/AUXCELL)
