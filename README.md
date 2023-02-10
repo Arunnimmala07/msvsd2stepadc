@@ -1,16 +1,14 @@
 # msvsd2stepadc
 
 # Table of Contents
-
-  * [week 0 : 4 TO 9 FEB 2023](#week-0-:-4-to-9-Feb-2023)
-  
-     + [Software Installation](#Software-Installation)
-     + [Create inverter and perform pre-layout using xschem or ngspice](#Create-inverter-and-perform-pre-layout-using-xschem-or-ngspice)
+  * [week 0](#week-0)  
+  * [Software Installation](#Software-Installation)
+  * [Create inverter and perform pre-layout using xschem or ngspice](#Create-inverter-and-perform-pre-layout-using-xschem-or-ngspice)
 
 
 
 
-# week 0 : 4 TO 9 FEB 2023
+# week 0
 ---
 As a preparation for the work, we are going to install the following software in Ubuntu 20.04. I created the scripts in the following numbered order, it is best if they are run in the same order.
 
@@ -22,7 +20,8 @@ As a preparation for the work, we are going to install the following software in
 |3	|netgen	|Netlist Generator|
 |5	|Open PDK (Sky130)	|Sky130 library|
 |6	|ALIGN	|Analog Netlist to GDS|
-## Software Installation
+
+# Software Installation
 ---
 We have a windows machine, install Oracle virtual box with Ubuntu 20.04 - RAM at least 4GB, hard-disk atleast 120GB.
 
@@ -180,7 +179,8 @@ pip install -U setuptools
 # Then use the correct package for dotenv, which is python-dotenv.
 pip install python-dotenv
 ```
-## Create inverter and perform pre-layout using xschem or ngspice
+
+# Create inverter and perform pre-layout using xschem or ngspice
 ---
 ### Verifiying the open_pdk installation
 An initial working directory can be made by copying the required files as follows:
