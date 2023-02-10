@@ -70,7 +70,7 @@ Netgen is a tool for comparing netlists, a process known as LVS, which stands fo
 
 Install steps:
 ```verilog
-$  git clone git://opencircuitdesign.com/netgen
+$  git clone https://github.com/RTimothyEdwards/netgen
 $  cd netgen
 $	./configure
 $  make
