@@ -26,30 +26,65 @@ Then, We need to install following softwares or tools.
 # Software Installation
 ---
 
-
 - First update ubuntu with command 
 ```verilog
 $ sudo apt-get update
 $ sudo apt-get upgrade
 ```
+
 - Then install the following required pakages.
 
-```verilog
-$ sudo apt-get install m4
-$ sudo apt-get install tcsh
-$ sudo apt-get install csh
-$ sudo apt-get install libx11-dev
-$ sudo apt-get install tcl-dev tk-dev
-$ sudo apt-get install libcairo2-dev
-$ sudo apt-get install mesa-common-dev libglu1-mesa-dev
-$ sudo apt-get install libncurses-dev
-$ sudo apt-get install flex
-$ sudo apt-get install bison
-$ sudo apt-get install libxpm-dev
-$ sudo apt-get install libxaw7-dev
-$ sudo apt-get install lib32readline8 lib32readline-dev
-$ sudo apt-get install libreadline-dev 
 ```
+ # install git tool
+   $sudo apt install -y git
+    
+# Install build-essential tools
+    $sudo apt install -y build-essential
+    
+# Install csh
+    $sudo apt install -y csh
+    
+# Install x11
+    $sudo apt install -y x11-apps
+    
+# Install X11
+    $sudo apt install -y x11-xserver-utils
+    
+# Install OpenGL
+    $sudo apt install -y libglu1-mesa-dev freeglut3-dev mesa-common-dev
+    
+# Cnstall Tcl/Tk
+    $sudo apt install -y tcl-dev tk-dev
+    
+# Install libjpeg-dev 
+    $sudo apt-get -y install libjpeg-dev
+    
+# Install xcb
+    $sudo apt-get -y install xcb
+    
+ # Install Xaw library
+    $sudo apt-get -y install libxaw7-dev
+    
+# Install xterm
+    $sudo apt-get -y install xterm
+    
+# Install bison
+    $sudo apt-get -y install bison
+    
+# Install flex
+    $sudo apt-get -y install flex
+    
+# Install readlines library
+    $sudo apt-get -y install libreadline6-dev
+
+# Install setup-tools
+    $sudo apt-get -y install python3-setuptools
+    
+# Install GNU m4
+    $sudo apt-get install -y m4
+    
+```
+
 ## MAGIC
 
 Magic is an open-source VLSI layout tool.
@@ -59,14 +94,26 @@ Magic is an open-source VLSI layout tool.
 |MAGIC|Layout|netlist and PDKs|GDSII|
 
 Install steps:
-```verilog
-$  git clone https://github.com/RTimothyEdwards/magic
-$  cd magic
-$	 ./configure
-$  make
-$  sudo make install
+
 ```
-- [More Info](http://opencircuitdesign.com/magic/index.html)
+# Change to the work directory
+    $cd ~/VSD_2stepadc
+    
+# Clone the git repo
+    $git clone https://github.com/RTimothyEdwards/magic
+    
+# Change into the magic directory
+    $cd magic
+    
+# Configure magic
+    $./configure
+    
+# Build magic
+    $make
+    
+# Install magic
+    $sudo make install
+```
 
 ## NETGEN
 
@@ -77,13 +124,26 @@ Netgen is a tool for comparing netlists, a process known as LVS, which stands fo
 |NETGEN|LVS|||
 
 Install steps:
-```verilog
-$  git clone https://github.com/RTimothyEdwards/netgen
-$  cd netgen
-$	./configure
-$  make
-$  sudo make install
+
 ```
+# Home directory
+cd ~/VSD_2stepadc
+
+# Clone the repository
+$git clone https://github.com/RTimothyEdwards/netgen
+$cd netgen
+
+# Configure the package
+$./configure
+
+# Compile the package
+$make
+
+# Install the package
+$sudo make install
+
+```
+
 - [More Info](http://opencircuitdesign.com/netgen/index.html)
 
 ## XSCHEM
@@ -97,13 +157,26 @@ In the present electronic system the circuit diagram has to be drawn using an in
 |Xschem| Schematic Editor|Schematic|Netlist|
 
 Install steps:
-```verilog
-$  git clone https://github.com/StefanSchippers/xschem.git xschem_git
-$  cd xschem_git
-$	./configure
-$  make
-$  sudo make install
+
 ```
+# Home directory
+    $cd ~/VSD_2stepadc
+    
+# Clone the repository
+    $  git clone https://github.com/StefanSchippers/xschem.git xschem_git
+        $cd xschem_git
+        
+# Configure the installation
+    $./configure
+    
+# Compile the source
+    $make
+    
+# Install the software
+    $sudo make install
+    
+```
+
 - [More Info](http://repo.hu/projects/xschem/index.html)
 
 ## NGSPICE
@@ -112,19 +185,43 @@ $  sudo make install
 
 Note: ngspice does not provide schematic entry. Its input is command line or file based
 
+```
+# Home directory
+    $cd ~/VSD_2stepadc
+    $tar -xzvf ngspice-39.tar.gz
+    $cd ngspice-39
+    $mkdir release
+    $cd release 
+    
+# Run configuration
+    $../configure  --with-x --with-readline=yes --disable-debug
+    
+# Build
+    $make 
+    
+# Install 
+    $sudo make install
+```
+
 ## OPEN_PDKs
 
 Open_PDKs is distributed with files that support the Google/SkyWater sky130 open process description https://github.com/google/skywater-pdk. Open_PDKs will set up an environment for using the SkyWater sky130 process with open-source EDA tools and tool flows such as magic, qflow, openlane, netgen, klayout, etc.
 
 Install steps:
-```verilog
-$  git clone https://github.com/RTimothyEdwards/open_pdks
-$  cd open_pdks
-$	./configure --enable-sky130-pdk
-$  make
-$  sudo make install
-```
 
+```
+# Home directory
+    $cd ~/VSD_2stepadc
+# Clone the Open PDK repository
+    $  git clone https://github.com/RTimothyEdwards/open_pdks
+    $cd open_pdks
+# Configure Open PDK to use Sky130 libraries
+    $./configure --enable-sky130-pdk
+# Compile the PDK
+    $make 
+# Install the PDK
+    $sudo make install
+```
 
 ## ALIGN
 
