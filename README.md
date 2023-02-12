@@ -16,7 +16,7 @@ Then, We need to install following softwares or tools.
 |1	|magic|	Layout Editor|
 |2	|ngspice	|SPICE Simulation|
 |4	|xschem	|Schematic Editor|
-|3	|netgen	|Netlist Generator|
+|3	|netgen	|Netlist comparator or LVS|
 |5	|Open PDK (Sky130)	|Sky130 library|
 |6	|ALIGN	|Automating Analog Layout|
 
