@@ -23,7 +23,7 @@ Then, We need to install following softwares or tools.
 |4	|xschem	|Schematic Editor|
 |3	|netgen	|Netlist Generator|
 |5	|Open PDK (Sky130)	|Sky130 library|
-|6	|ALIGN	|Analog Netlist to GDS|
+|6	|ALIGN	|Automating Analog Layout|
 
 # Software Installation
 ---
@@ -113,6 +113,12 @@ $  sudo make install
 
 
 ### ALIGN
+
+ALIGN (**_Analog Layout, Intelligently Generated from Netlists_**) is tool used for the analog layout automation or simple, ALIGN: A System for Automating Analog Layout. [example](https://arxiv.org/pdf/2008.10682.pdf)
+
+|Tool Name| Inputs|ouptputs|
+|---------|--------|-------|
+|ALIGN|netlist and PDKs|GDSII|
 
 - Installing ALIGN
 ```verilog
