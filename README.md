@@ -81,7 +81,7 @@ $  sudo make install
 ### Xschem
 In the present electronic system the circuit diagram has to be drawn using an interactive computer program called **SCHEMATIC EDITOR** , this is usually a very first step in the design cycle of the product. Once the schematic has been drawn on the computer, the circuit connectivity and device list **(NETLIST)** can be generated and sent to a **CIRCUIT SIMUALTOR** (spice, hspice, eldo etc..) for performing circuit simulation.
 
-XSCHEM is a schematic capture program -[more Infor] (https://xschem.sourceforge.io/stefan/xschem_man/what_is_xschem.html)that allows to interactively enter an electronic circuit using a graphical and easy to use interface. When the schematic has been created a circuit netlist can be generated for simulation. 
+[**XSCHEM**](https://xschem.sourceforge.io/stefan/xschem_man/what_is_xschem.html) is a schematic capture program that allows to interactively enter an electronic circuit using a graphical and easy to use interface. When the schematic has been created a circuit netlist can be generated for simulation. 
 
 |Tool Name |Purpose|Outputs|
 |----------|-------|-------|
