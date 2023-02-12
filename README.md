@@ -5,14 +5,9 @@
       - [Software Installation](#Software-Installation)
       - [Create inverter and perform pre-layout using xschem or ngspice](#Create-inverter-and-perform-pre-layout-using-xschem-or-ngspice)
 
-
-
-
 # week 0
 ---
 In the week 0: we have to install linux Operting System: I installed: Ubuntu 20.04. 
-
-OS installation
 
 Then, We need to install following softwares or tools.
 
@@ -24,6 +19,9 @@ Then, We need to install following softwares or tools.
 |3	|netgen	|Netlist Generator|
 |5	|Open PDK (Sky130)	|Sky130 library|
 |6	|ALIGN	|Automating Analog Layout|
+
+![1](https://user-images.githubusercontent.com/123537301/218300844-1c144e4d-f49e-4d2c-ac44-2a1cc8a889a4.jpg)
+
 
 # Software Installation
 ---
