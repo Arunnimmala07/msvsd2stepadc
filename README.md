@@ -130,17 +130,17 @@ Install steps:
 cd ~/VSD_2stepadc
 
 # Clone the repository
-$git clone https://github.com/RTimothyEdwards/netgen
-$cd netgen
+   $git clone https://github.com/RTimothyEdwards/netgen
+   $cd netgen
 
 # Configure the package
-$./configure
+   $./configure
 
 # Compile the package
-$make
+   $make
 
 # Install the package
-$sudo make install
+   $sudo make install
 
 ```
 
@@ -163,7 +163,7 @@ Install steps:
     $cd ~/VSD_2stepadc
     
 # Clone the repository
-    $  git clone https://github.com/StefanSchippers/xschem.git xschem_git
+    $git clone https://github.com/StefanSchippers/xschem.git xschem_git
         $cd xschem_git
         
 # Configure the installation
@@ -213,7 +213,7 @@ Install steps:
 # Home directory
     $cd ~/VSD_2stepadc
 # Clone the Open PDK repository
-    $  git clone https://github.com/RTimothyEdwards/open_pdks
+    $git clone https://github.com/RTimothyEdwards/open_pdks
     $cd open_pdks
 # Configure Open PDK to use Sky130 libraries
     $./configure --enable-sky130-pdk
@@ -232,85 +232,85 @@ ALIGN (**_Analog Layout, Intelligently Generated from Netlists_**) is tool used 
 |ALIGN|Automating Analog Layout|netlist and PDKs|GDSII|
 
 - Installing ALIGN
-```verilog
-# Clone the ALIGN source
-git clone https://github.com/ALIGN-analoglayout/ALIGN-public
 
-cd ALIGN-public
+```
+# Home directory
+    $cd ~/VSD_8TSRAM
+
+# Clone the ALIGN source
+    $git clone https://github.com/ALIGN-analoglayout/ALIGN-public
+    $cd ALIGN-public
 
 # Install virtual environment for python
-sudo apt -y install python3.8-venv
+    $sudo apt -y install python3.8-venv
 
 # Install the latest pip
-sudo apt-get -y install python3-pip
+    $sudo apt-get -y install python3-pip
 
 # Create python virtual envronment
-python3 -m venv general
-
-source general/bin/activate
-
-python3 -m pip install pip --upgrade
-
-pip install pandas
-pip install scipy
-pip install nltk
-pip install gensim
-
-pip install setuptools wheel pybind11 scikit-build cmake ninja
-
-# Install Boost using
-sudo apt-get install libboost-all-dev
-# Installing lp_slove
-sudo apt-get update
-sudo apt-get install lp-solve
+    $python3 -m venv general
+    $source general/bin/activate
+    $python3 -m pip install pip --upgrade
+    $pip install align
+    $pip install pandas
+    $pip install scipy
+    $pip install nltk
+    $pip install gensim
+    $pip install setuptools wheel pybind11 scikit-build cmake ninja
 
 # Install ALIGN as a user
-pip install -v .
+    $pip install -v .
 
 # Install ALIGN  as a developer
-pip install -e .
-
-pip install -v -e .[test] --no-build-isolation
-pip install -v --no-build-isolation -e . --no-deps --install-option='-DBUILD_TESTING=ON'
-
+    $pip install -e .
+    $pip install -v -e .[test] --no-build-isolation
+    $pip install wheel setuptools pip --upgrade
+    $pip3 install wheel setuptools pip --upgrade
+    $pip install -v --no-build-isolation -e . --no-deps --install-option='-DBUILD_TESTING=ON'
 ```
 
-- Clone the Sky130 PDK
-```verilog
-cd ~/software/ALIGN-public
+#### Making ALIGN Portable to Sky130 tehnology
 
-git clone https://github.com/ALIGN-analoglayout/ALIGN-pdk-sky130
-```
-- If faced this error 
+Clone the following Repository inside ALIGN-public directory
 
-- Solution
 ```
-# First update setuptools
-pip install -U setuptools
-# Then use the correct package for dotenv, which is python-dotenv.
-pip install python-dotenv
+    $git clone https://github.com/ALIGN-analoglayout/ALIGN-pdk-sky130
+```
+
+Move SKY130_PDK folder to ~/VSD_8TSRAM/ALIGN-public/pdks.
+Everytime we start the tool in new terminal, run the following commands.
+
+```
+# Running ALIGN TOOL
+    $python -m venv general
+    $source general/bin/activate
+```
+
+Commands to run ALIGN (goto ALIGN-public directory)
+
+```
+    $mkdir work
+    $cd work
+```
+
+General syntax to give inputs
+
+```
+schematic2layout.py <NETLIST_DIR> -p <PDK_DIR> -c
+
+EXAMPLE 1:
+schematic2layout.py ../examples/telescopic_ota -p ../pdks/FinFET14nm_Mock_PDK/
+
+EXAMPLE 2:
+schematic2layout.py ../ALIGN-pdk-sky130/examples/five_transistor_ota -p ../pdks/SKY130_PDK/
 ```
 
 # Create inverter and perform pre-layout using xschem or ngspice
 ---
 ### Verifiying the open_pdk installation
-An initial working directory can be made by copying the required files as follows:
-```verilog
-$ mkdir week0
-$ cd week0
-$ mkdir inverter
-$ cd inverter
-$ mkdir mag
-$ mkdir netgen
-$ mkdir xschem
-$ cd xschem
-$ cp /usr/local/share/pdk/sky130A/libs.tech/xschem/xschemrc .
-$ cp /usr/local/share/pdk/sky130A/libs.tech/ngspice/spinit .spiceinit
-$ cd ../mag
-$ cp /usr/local/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc .magicrc
-$ cd ../netgen
-$ cp /usr/local/share/pdk/sky130A/libs.tech/netgen//sky130A_setup.tcl .
-```
+
+
+
 
 #### Checking if magic works
 
