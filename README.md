@@ -50,7 +50,8 @@ $ sudo apt-get install libxaw7-dev
 $ sudo apt-get install lib32readline8 lib32readline-dev
 $ sudo apt-get install libreadline-dev 
 ```
-## Magic
+## MAGIC
+
 Magic is an open-source VLSI layout tool.
 
 Install steps:
@@ -63,7 +64,8 @@ $  sudo make install
 ```
 - [More Info](http://opencircuitdesign.com/magic/index.html)
 
-## Netgen
+## NETGEN
+
 Netgen is a tool for comparing netlists, a process known as LVS, which stands for "Layout vs. Schematic"
 
 Install steps:
@@ -76,7 +78,8 @@ $  sudo make install
 ```
 - [More Info](http://opencircuitdesign.com/netgen/index.html)
 
-## Xschem
+## XSCHEM
+
 In the present electronic system the circuit diagram has to be drawn using an interactive computer program called **SCHEMATIC EDITOR** , this is usually a very first step in the design cycle of the product. Once the schematic has been drawn on the computer, the circuit connectivity and device list **(NETLIST)** can be generated and sent to a **CIRCUIT SIMUALTOR** (spice, hspice, eldo etc..) for performing circuit simulation.
 
 [**XSCHEM**](https://xschem.sourceforge.io/stefan/xschem_man/what_is_xschem.html) is a schematic capture program that allows to interactively enter an electronic circuit using a graphical and easy to use interface. When the schematic has been created a circuit netlist can be generated for simulation. 
@@ -97,10 +100,12 @@ $  sudo make install
 
 ## NGSPICE
 
-[NGSPICE](https://ngspice.sourceforge.io/)
+[NGSPICE](https://ngspice.sourceforge.io/)ngspice is the open source spice simulator for electric and electronic circuits and it is a SPICE compatible.
+
 Note: ngspice does not provide schematic entry. Its input is command line or file based
 
-### open_pdk
+## OPEN_PDKs
+
 Open_PDKs is distributed with files that support the Google/SkyWater sky130 open process description https://github.com/google/skywater-pdk. Open_PDKs will set up an environment for using the SkyWater sky130 process with open-source EDA tools and tool flows such as magic, qflow, openlane, netgen, klayout, etc.
 
 Install steps:
@@ -113,7 +118,7 @@ $  sudo make install
 ```
 
 
-### ALIGN
+## ALIGN
 
 ALIGN (**_Analog Layout, Intelligently Generated from Netlists_**) is tool used for the analog layout automation or simple, ALIGN: A System for Automating Analog Layout. [example](https://arxiv.org/pdf/2008.10682.pdf)
 
