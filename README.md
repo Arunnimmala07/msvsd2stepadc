@@ -212,13 +212,17 @@ Install steps:
 ```
 # Home directory
     $cd ~/VSD_2stepadc
+    
 # Clone the Open PDK repository
     $git clone https://github.com/RTimothyEdwards/open_pdks
     $cd open_pdks
+    
 # Configure Open PDK to use Sky130 libraries
     $./configure --enable-sky130-pdk
+    
 # Compile the PDK
     $make 
+    
 # Install the PDK
     $sudo make install
 ```
