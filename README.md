@@ -235,7 +235,7 @@ ALIGN (**_Analog Layout, Intelligently Generated from Netlists_**) is tool used 
 
 ```
 # Home directory
-    $cd ~/VSD_8TSRAM
+    $cd ~/VSD_2stepadc
 
 # Clone the ALIGN source
     $git clone https://github.com/ALIGN-analoglayout/ALIGN-public
@@ -277,7 +277,7 @@ Clone the following Repository inside ALIGN-public directory
     $git clone https://github.com/ALIGN-analoglayout/ALIGN-pdk-sky130
 ```
 
-Move SKY130_PDK folder to ~/VSD_8TSRAM/ALIGN-public/pdks.
+Move SKY130_PDK folder to ~/VSD_2stepadc/ALIGN-public/pdks.
 Everytime we start the tool in new terminal, run the following commands.
 
 ```
