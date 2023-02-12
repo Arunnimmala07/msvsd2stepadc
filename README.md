@@ -27,6 +27,7 @@ Then, We need to install following softwares or tools.
 ---
 
 - First update ubuntu with command 
+
 ```verilog
 $ sudo apt-get update
 $ sudo apt-get upgrade
