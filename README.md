@@ -54,6 +54,10 @@ $ sudo apt-get install libreadline-dev
 
 Magic is an open-source VLSI layout tool.
 
+|Tool Name| Purpose|Inputs|ouptputs|
+|---------|--------|--------|-------|
+|MAGIC|Layout|netlist and PDKs|GDSII|
+
 Install steps:
 ```verilog
 $  git clone https://github.com/RTimothyEdwards/magic
@@ -67,6 +71,10 @@ $  sudo make install
 ## NETGEN
 
 Netgen is a tool for comparing netlists, a process known as LVS, which stands for "Layout vs. Schematic"
+
+|Tool Name| Purpose|Inputs|ouptputs|
+|---------|--------|--------|-------|
+|NETGEN|LVS|||
 
 Install steps:
 ```verilog
@@ -122,9 +130,9 @@ $  sudo make install
 
 ALIGN (**_Analog Layout, Intelligently Generated from Netlists_**) is tool used for the analog layout automation or simple, ALIGN: A System for Automating Analog Layout. [example](https://arxiv.org/pdf/2008.10682.pdf)
 
-|Tool Name| Inputs|ouptputs|
-|---------|--------|-------|
-|ALIGN|netlist and PDKs|GDSII|
+|Tool Name| Purpose|Inputs|ouptputs|
+|---------|--------|--------|-------|
+|ALIGN|Automating Analog Layout|netlist and PDKs|GDSII|
 
 - Installing ALIGN
 ```verilog
