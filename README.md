@@ -29,8 +29,8 @@ Then, We need to install following softwares or tools.
 - First update ubuntu with command 
 
 ```verilog
-$ sudo apt-get update
-$ sudo apt-get upgrade
+ $sudo apt-get update
+ $sudo apt-get upgrade
 ```
 
 - Then install the following required pakages.
@@ -128,7 +128,7 @@ Install steps:
 
 ```
 # Home directory
-cd ~/VSD_2stepadc
+   $cd ~/VSD_2stepadc
 
 # Clone the repository
    $git clone https://github.com/RTimothyEdwards/netgen
