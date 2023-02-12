@@ -79,7 +79,9 @@ $  sudo make install
 - [More Info](http://opencircuitdesign.com/netgen/index.html)
 
 ### Xschem
-Xschem is a schematic capture program
+In the present electronic system the circuit diagram has to be drawn using an interactive computer program called #schematic editor# , this is usually a very first step in the design cycle of the product. Once the schematic has been drawn on the computer, the circuit connectivity and device list #(netlist)# can be generated and sent to a #circuit simulator#(spice, hspice, eldo, just to mention some) for performing circuit simulation.
+
+So, as you probably guessed, XSCHEM is a schematic capture program that allows to interactively enter an electronic circuit using a graphical and easy to use interface. When the schematic has been created a circuit netlist can be generated for simulation. Currently XSCHEM supports four netlist formats: Xschem is a schematic capture program, it allows creation of hierarchical representation of circuits with a top down approach . By focusing on interfaces, hierarchy and instance properties a complex system can be described in terms of simpler building blocks. A VHDL or Verilog or Spice netlist can be generated from the drawn schematic, allowing the simulation of the circuit.Xschem is a schematic capture program.
 
 Install steps:
 ```verilog
