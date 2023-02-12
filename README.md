@@ -50,7 +50,7 @@ $ sudo apt-get install libxaw7-dev
 $ sudo apt-get install lib32readline8 lib32readline-dev
 $ sudo apt-get install libreadline-dev 
 ```
-### Magic
+## Magic
 Magic is an open-source VLSI layout tool.
 
 Install steps:
@@ -63,7 +63,7 @@ $  sudo make install
 ```
 - [More Info](http://opencircuitdesign.com/magic/index.html)
 
-### Netgen
+## Netgen
 Netgen is a tool for comparing netlists, a process known as LVS, which stands for "Layout vs. Schematic"
 
 Install steps:
@@ -76,14 +76,14 @@ $  sudo make install
 ```
 - [More Info](http://opencircuitdesign.com/netgen/index.html)
 
-### Xschem
+## Xschem
 In the present electronic system the circuit diagram has to be drawn using an interactive computer program called **SCHEMATIC EDITOR** , this is usually a very first step in the design cycle of the product. Once the schematic has been drawn on the computer, the circuit connectivity and device list **(NETLIST)** can be generated and sent to a **CIRCUIT SIMUALTOR** (spice, hspice, eldo etc..) for performing circuit simulation.
 
 [**XSCHEM**](https://xschem.sourceforge.io/stefan/xschem_man/what_is_xschem.html) is a schematic capture program that allows to interactively enter an electronic circuit using a graphical and easy to use interface. When the schematic has been created a circuit netlist can be generated for simulation. 
 
-|Tool Name |Purpose|Outputs|
-|----------|-------|-------|
-|Xschem| Schematic Editor| Netlist|
+|Tool Name |Purpose|Inputs|Outputs|
+|----------|-------|-------|------|
+|Xschem| Schematic Editor|Schematic|Netlist|
 
 Install steps:
 ```verilog
@@ -95,7 +95,10 @@ $  sudo make install
 ```
 - [More Info](http://repo.hu/projects/xschem/index.html)
 
+## NGSPICE
 
+[NGSPICE](https://ngspice.sourceforge.io/)
+Note: ngspice does not provide schematic entry. Its input is command line or file based
 
 ### open_pdk
 Open_PDKs is distributed with files that support the Google/SkyWater sky130 open process description https://github.com/google/skywater-pdk. Open_PDKs will set up an environment for using the SkyWater sky130 process with open-source EDA tools and tool flows such as magic, qflow, openlane, netgen, klayout, etc.
