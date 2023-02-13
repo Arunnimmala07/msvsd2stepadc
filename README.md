@@ -122,7 +122,7 @@ Netgen is a tool for comparing netlists, a process known as LVS, which stands fo
 
 |Tool Name| Purpose|Inputs|ouptputs|
 |---------|--------|--------|-------|
-|NETGEN|LVS|||
+|NETGEN|LVS|netlist (pre-layout or from schematic) <br> and <br> netlist (post layout or from layout\)|comp.out|
 
 Install steps:
 
@@ -182,7 +182,8 @@ Install steps:
 
 ## NGSPICE
 
-[NGSPICE](https://ngspice.sourceforge.io/)ngspice is the open source spice simulator for electric and electronic circuits and it is a SPICE compatible.
+[NGSPICE](https://ngspice.sourceforge.io/) ngspice is the open source spice simulator for electric and electronic circuits and it is a SPICE compatible.
+Download the [ngspice-39.tar.gz](https://sourceforge.net/projects/ngspice/files/ng-spice-rework/39/ngspice-39.tar.gz/download) and extract the file by using the commands as below.
 
 Note: ngspice does not provide schematic entry. Its input is command line or file based
 
