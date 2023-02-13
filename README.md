@@ -360,6 +360,7 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl .
 
 ### Creating inverter schematic using xschem
 
+
 # Reference
 - [Installing Tools](https://github.com/yathAg/Physical_Verification_SKY130A#Chapter-0---Getting-the-tools)
 - [Installing ALIGN](https://github.com/sanampudig/OpenFASoC/tree/main/AUXCELL)
