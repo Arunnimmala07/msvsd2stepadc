@@ -7,6 +7,8 @@
 
 # week 0
 ---
+# I: Operating system installion  
+
 In the week 0: we have to install linux Operting System: I installed: Ubuntu 20.04. 
 
 Then, We need to install following softwares or tools.
@@ -22,8 +24,9 @@ Then, We need to install following softwares or tools.
 
 ![1](https://user-images.githubusercontent.com/123537301/218300844-1c144e4d-f49e-4d2c-ac44-2a1cc8a889a4.jpg)
 
+       A). MAGIC, B). NETGEN, C). XSCHEM, D). NGSPICE, E). OPEN_PDKs (SKY130) and F). ALIGN
 
-# Software Installation
+# II: Software Installation
 ---
 
 - First update ubuntu with command 
@@ -86,7 +89,7 @@ Then, We need to install following softwares or tools.
     
 ```
 
-## MAGIC
+## A). MAGIC
 
 Magic is an open-source VLSI layout tool.
 
@@ -116,7 +119,7 @@ Install steps:
     $sudo make install
 ```
 
-## NETGEN
+## B). NETGEN
 
 Netgen is a tool for comparing netlists, a process known as LVS, which stands for "Layout vs. Schematic"
 
@@ -147,7 +150,7 @@ Install steps:
 
 - [More Info](http://opencircuitdesign.com/netgen/index.html)
 
-## XSCHEM
+## C). XSCHEM
 
 In the present electronic system the circuit diagram has to be drawn using an interactive computer program called **SCHEMATIC EDITOR** , this is usually a very first step in the design cycle of the product. Once the schematic has been drawn on the computer, the circuit connectivity and device list **(NETLIST)** can be generated and sent to a **CIRCUIT SIMUALTOR** (spice, hspice, eldo etc..) for performing circuit simulation.
 
@@ -180,7 +183,7 @@ Install steps:
 
 - [More Info](http://repo.hu/projects/xschem/index.html)
 
-## NGSPICE
+## D). NGSPICE
 
 [NGSPICE](https://ngspice.sourceforge.io/) ngspice is the open source spice simulator for electric and electronic circuits and it is a SPICE compatible.
 Download the [ngspice-39.tar.gz](https://sourceforge.net/projects/ngspice/files/ng-spice-rework/39/ngspice-39.tar.gz/download) and extract the file by using the commands as below.
@@ -205,7 +208,7 @@ Note: ngspice does not provide schematic entry. Its input is command line or fil
     $sudo make install
 ```
 
-## OPEN_PDKs
+## E). OPEN_PDKs
 
 Open_PDKs is distributed with files that support the Google/SkyWater sky130 open process description https://github.com/google/skywater-pdk. Open_PDKs will set up an environment for using the SkyWater sky130 process with open-source EDA tools and tool flows such as magic, qflow, openlane, netgen, klayout, etc.
 
@@ -229,7 +232,7 @@ Install steps:
     $sudo make install
 ```
 
-## ALIGN
+## F). ALIGN
 
 ALIGN (**_Analog Layout, Intelligently Generated from Netlists_**) is tool used for the analog layout automation or simple, ALIGN: A System for Automating Analog Layout. [example](https://arxiv.org/pdf/2008.10682.pdf)
 
@@ -309,9 +312,34 @@ schematic2layout.py ../examples/telescopic_ota -p ../pdks/FinFET14nm_Mock_PDK/
 
 EXAMPLE 2:
 schematic2layout.py ../ALIGN-pdk-sky130/examples/five_transistor_ota -p ../pdks/SKY130_PDK/
+
 ```
 
-# Create inverter and perform pre-layout using xschem or ngspice
+# III. Verifiying the open_pdk and Open source tools installation
+
+An initial working directory can be made by copying the required files as follows:
+
+```
+$ mkdir LAB1
+$ cd LAB1
+
+$ mkdir xschem
+$ cd xschem
+$ cp /usr/local/share/pdk/sky130A/libs.tech/xschem/xschemrc .
+
+$ cp /usr/local/share/pdk/sky130A/libs.tech/ngspice/spinit .spiceinit
+
+$ mkdir mag
+$ cd ../mag
+$ cp /usr/local/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc .magicrc
+
+$ mkdir netgen
+$ cd ../netgen
+$ cp /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl .
+
+```
+
+# IV. Create inverter and perform pre-layout using xschem or ngspice
 ---
 ### Verifiying the open_pdk installation
 
