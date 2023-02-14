@@ -349,7 +349,10 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl .
 # Running or invoking the xschem tool
    
    arun@arun-Vostro-1550:~/Desktop/VSD_2stepadc$magic
-```
+   
+   ```
+
+![2](https://github.com/Arunnimmala07/msvsd2stepadc/blob/main/Screenshot%20from%202023-02-14%2001-44-05.png)
 
 ## Checking if xschem works
 
