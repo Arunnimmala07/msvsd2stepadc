@@ -385,7 +385,7 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl .
 
 # IV. Create inverter and perform pre-layout using xschem or ngspice
 ---
-
+![1](https://github.com/Arunnimmala07/msvsd2stepadc/blob/main/Screenshot%20from%202023-02-14%2002-57-22.png)
 
 
 # Reference
