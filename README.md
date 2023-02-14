@@ -339,7 +339,7 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl .
 
 ```
 
-## Verifiying the open_pdk installation
+## Verifiying the open source tools and open_pdk installation
 
 
 
@@ -381,6 +381,8 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl .
    
    arun@arun-Vostro-1550:~/Desktop/VSD_2stepadc/LAB1/xschem$ngspice
 ```
+
+![1](https://github.com/Arunnimmala07/msvsd2stepadc/blob/main/ngspice.png)
 
 
 # IV. Create inverter and perform pre-layout using xschem 
