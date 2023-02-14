@@ -372,6 +372,8 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl .
    arun@arun-Vostro-1550:~/Desktop/VSD_2stepadc$netgen
 ```
 
+![1](https://github.com/Arunnimmala07/msvsd2stepadc/blob/main/Screenshot%20from%202023-02-14%2001-46-05.png)
+
 ## Checking if ngspice works
 
 ```
