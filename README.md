@@ -359,6 +359,7 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl .
 
 
 ### Creating inverter schematic using xschem
+![2](https://github.com/Arunnimmala07/msvsd2stepadc/blob/main/Screenshot%20from%202023-02-14%2001-37-33.png)
 
 
 # Reference
