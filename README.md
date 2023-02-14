@@ -339,27 +339,47 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl .
 
 ```
 
+## Verifiying the open_pdk installation
+
+
+
+## Checking if magic works
+
+```
+# Running or invoking the xschem tool
+   
+   arun@arun-Vostro-1550:~/Desktop/VSD_2stepadc$magic
+```
+
+## Checking if xschem works
+
+```
+# Running or invoking the xschem tool
+   
+   arun@arun-Vostro-1550:~/Desktop/VSD_2stepadc$xschem
+```
+
+![2](https://github.com/Arunnimmala07/msvsd2stepadc/blob/main/Screenshot%20from%202023-02-14%2001-37-33.png)
+
+## Checking if netgen works
+
+```
+# Running or invoking the xschem tool
+   
+   arun@arun-Vostro-1550:~/Desktop/VSD_2stepadc$netgen
+```
+
+## Checking if ngspice works
+
+```
+# Running or invoking the xschem tool
+   
+   arun@arun-Vostro-1550:~/Desktop/VSD_2stepadc$ngspice
+```
+
 # IV. Create inverter and perform pre-layout using xschem or ngspice
 ---
-### Verifiying the open_pdk installation
 
-
-
-
-#### Checking if magic works
-
-
-#### Checking if xschem works
-
-
-#### Checking if netgen works
-
-
-#### Checking if ngspice works
-
-
-### Creating inverter schematic using xschem
-![2](https://github.com/Arunnimmala07/msvsd2stepadc/blob/main/Screenshot%20from%202023-02-14%2001-37-33.png)
 
 
 # Reference
