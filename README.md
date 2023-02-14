@@ -367,7 +367,7 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl .
 ## Checking if **netgen** works
 
 ```
-# Running or invoking the xschem tool
+# Running or invoking the **netgen** tool
    
    arun@arun-Vostro-1550:~/Desktop/VSD_2stepadc/LAB1/netgen$netgen
 ```
