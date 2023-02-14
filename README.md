@@ -346,7 +346,7 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl .
 ## Checking if magic works
 
 ```
-# Running or invoking the xschem tool
+# Running or invoking the **magic** tool
    
    arun@arun-Vostro-1550:~/Desktop/VSD_2stepadc/LAB1/magic$magic
    
@@ -357,14 +357,14 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl .
 ## Checking if xschem works
 
 ```
-# Running or invoking the xschem tool
+# Running or invoking the **xschem** tool
    
    arun@arun-Vostro-1550:~/Desktop/VSD_2stepadc/LAB1/xschem$xschem
 ```
 
 ![2](https://github.com/Arunnimmala07/msvsd2stepadc/blob/main/Screenshot%20from%202023-02-14%2001-37-33.png)
 
-## Checking if netgen works
+## Checking if **netgen** works
 
 ```
 # Running or invoking the xschem tool
@@ -377,13 +377,13 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl .
 ## Checking if ngspice works
 
 ```
-# Running or invoking the xschem tool
+# Running or invoking the **ngspice tool**
    
    arun@arun-Vostro-1550:~/Desktop/VSD_2stepadc/LAB1/xschem$ngspice
 ```
 
 
-# IV. Create inverter and perform pre-layout using xschem or ngspice
+# IV. Create inverter and perform pre-layout using xschem 
 ---
 ![1](https://github.com/Arunnimmala07/msvsd2stepadc/blob/main/Screenshot%20from%202023-02-14%2002-57-22.png)
 
@@ -396,6 +396,9 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl .
 ![1](https://github.com/Arunnimmala07/msvsd2stepadc/blob/main/Screenshot%20from%202023-02-14%2003-56-36.png)
 
 ![1](https://github.com/Arunnimmala07/msvsd2stepadc/blob/main/Screenshot%20from%202023-02-14%2003-56-31.png)
+
+
+# V. Create inverter and perform pre-layout using ngspice 
 
 
 # Reference
