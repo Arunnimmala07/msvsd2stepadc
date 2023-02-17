@@ -413,7 +413,7 @@ Installed ALIGN
 
 # VI. Generating the schematic for the function  Fn= (B+D). (A+C)+ E. F  using xschem 
 
-
+![1](https://github.com/Arunnimmala07/msvsd2stepadc/blob/main/Screenshot%20from%202023-02-18%2000-57-01.png)
 
 
 # Reference
