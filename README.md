@@ -5,6 +5,10 @@
       - [Software Installation](#Software-Installation)
       - [Create inverter and perform pre-layout using xschem or ngspice](#Create-inverter-and-perform-pre-layout-using-xschem-or-ngspice)
 
+* [week 1](#week-1)  
+      - [reamaining Software Installation](#reamaining-Software-Installation)
+      - [Create inverter and perform pre-layout using xschem or ngspice](#Create-inverter-and-perform-pre-layout-using-xschem-or-ngspice)
+
 # week 0
 ---
 # I: Operating system installion  
@@ -400,6 +404,10 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl .
 ![1](https://github.com/Arunnimmala07/msvsd2stepadc/blob/main/Screenshot%20from%202023-02-14%2003-56-31.png)
 
 # V. Create inverter and perform pre-layout using ngspice 
+
+# week 1
+
+# reamaining Software Installation
 
 # Reference
 - [Installing Tools](https://github.com/yathAg/Physical_Verification_SKY130A#Chapter-0---Getting-the-tools)
