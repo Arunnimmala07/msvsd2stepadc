@@ -7,7 +7,7 @@
 
 * [week 1](#week-1)  
       - [reamaining Software Installation](#reamaining-Software-Installation)
-      - [Create inverter and perform pre-layout using xschem or ngspice](#Create-inverter-and-perform-pre-layout-using-xschem-or-ngspice)
+      
 
 # week 0
 ---
@@ -408,6 +408,13 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl .
 # week 1
 
 # reamaining Software Installation
+
+Installed ALIGN
+
+# VI. Generating the schematic for the function  Fn= (B+D). (A+C)+ E. F  using xschem 
+
+
+
 
 # Reference
 - [Installing Tools](https://github.com/yathAg/Physical_Verification_SKY130A#Chapter-0---Getting-the-tools)
