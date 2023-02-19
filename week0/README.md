@@ -356,9 +356,7 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl .
    
    ```
 
-![2](https://github.com/Arunnimmala07/msvsd2stepadc/blob/main/Screenshot%20from%202023-02-14%2001-44-05.png)
-
-## Checking if xschem works
+![Screenshot from 2023-02-14 01-44-05](https://user-images.githubusercontent.com/123537301/219945118-651da5c5-981e-4fab-9d23-2fd37cdcc466.png)
 
 ```
 # Running or invoking the **xschem** tool
