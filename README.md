@@ -405,6 +405,37 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl .
 
 # V. Create inverter and perform pre-layout using ngspice 
 
+````
+*SPICE3 file created for inverter pre-layout simulation
+
+.option scale=0.09u
+
+.include 130nm_bulk.txt
+
+M1 out in gnd gnd nmos w=10 l=2
++ ad=50 pd=30 as=50 ps=30
+M2 out in vdd vdd pmos w=10 l=2
++ ad=50 pd=30 as=50 ps=30
+
+Vdd vdd 0 1.8V
+Gnd gnd 0 0V
+Vin in gnd pulse(0 1.8V 0 0.1ns 0.1ns 2ns 4ns)
+ 
+*.tran 1n 20n
+.dc Vin 0 1.8 0.01
+.control
+set color0=white
+set color1=black
+set color2=red
+set color3=blue
+set xbrushwidth=3
+plot in out
+run
+.endc
+.end
+
+````
+![1](/home/arun/Pictures/Screenshot from 2023-02-19 15-53-39.png)
 # week 1
 
 # reamaining Software Installation
