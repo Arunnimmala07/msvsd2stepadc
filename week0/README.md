@@ -374,7 +374,7 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl .
    arun@arun-Vostro-1550:~/Desktop/VSD_2stepadc/LAB1/netgen$netgen
 ```
 
-![1](https://github.com/Arunnimmala07/msvsd2stepadc/blob/main/Screenshot%20from%202023-02-14%2001-46-05.png)
+![Screenshot from 2023-02-14 01-46-05](https://user-images.githubusercontent.com/123537301/219945256-1a2ecb3f-d316-40db-bfc1-e90eb8096512.png)
 
 ## Checking if ngspice works
 
@@ -387,19 +387,29 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl .
 ![1](https://github.com/Arunnimmala07/msvsd2stepadc/blob/main/ngspice.png)
 
 
+
+
+
+
+
+
 # IV. Create inverter and perform pre-layout using xschem 
 ---
-![1](https://github.com/Arunnimmala07/msvsd2stepadc/blob/main/Screenshot%20from%202023-02-14%2002-57-22.png)
 
-![1](https://github.com/Arunnimmala07/msvsd2stepadc/blob/main/Screenshot%20from%202023-02-14%2003-35-29.png)
+![Screenshot from 2023-02-14 02-57-22](https://user-images.githubusercontent.com/123537301/219945278-c089f8b5-21a7-4c60-926a-fe0a896f79f9.png)
 
-![1](https://github.com/Arunnimmala07/msvsd2stepadc/blob/main/Screenshot%20from%202023-02-14%2003-35-45.png)
 
-![1](https://github.com/Arunnimmala07/msvsd2stepadc/blob/main/Screenshot%20from%202023-02-14%2003-56-44.png)
+![Screenshot from 2023-02-14 03-35-29](https://user-images.githubusercontent.com/123537301/219945287-419783d8-53a6-4ed0-a965-68b0ddd8ca33.png)
 
-![1](https://github.com/Arunnimmala07/msvsd2stepadc/blob/main/Screenshot%20from%202023-02-14%2003-56-36.png)
 
-![1](https://github.com/Arunnimmala07/msvsd2stepadc/blob/main/Screenshot%20from%202023-02-14%2003-56-31.png)
+![Screenshot from 2023-02-14 03-35-45](https://user-images.githubusercontent.com/123537301/219945299-4f79fd2a-8ce9-4ce3-bf0e-16ab2464616c.png)
+
+![Screenshot from 2023-02-14 03-56-44](https://user-images.githubusercontent.com/123537301/219945325-4ccdff22-7aec-4dcb-bf65-625a04c6d9b6.png)
+
+![Screenshot from 2023-02-14 03-56-36](https://user-images.githubusercontent.com/123537301/219945319-61453f91-174f-45c1-9cd8-38afdf3d07ec.png)
+
+![Screenshot from 2023-02-14 03-56-31](https://user-images.githubusercontent.com/123537301/219945311-d00e83a3-dc0a-4529-9f19-aae6622e8f0c.png)
+
 
 # V. Create inverter and perform pre-layout using ngspice 
 
