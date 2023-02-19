@@ -366,7 +366,7 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl .
    arun@arun-Vostro-1550:~/Desktop/VSD_2stepadc/LAB1/xschem$xschem
 ```
 
-![2](https://github.com/Arunnimmala07/msvsd2stepadc/blob/main/Screenshot%20from%202023-02-14%2001-37-33.png)
+![Screenshot from 2023-02-14 01-37-33](https://user-images.githubusercontent.com/123537301/219944990-ae1767c8-4e22-4912-ba2c-79c3b4d41480.png)
 
 ## Checking if **netgen** works
 
