@@ -435,6 +435,5 @@ run
 .end
 
 ````
-![1](/home/arun/Pictures/Screenshot from 2023-02-19 15-53-39.png)
 
 ![Screenshot from 2023-02-19 15-50-33](https://user-images.githubusercontent.com/123537301/219944782-96d02855-7ee3-46c5-a3ee-58206f4f914a.png)
