@@ -382,15 +382,10 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl .
 # Running or invoking the **ngspice tool**
    
    arun@arun-Vostro-1550:~/Desktop/VSD_2stepadc/LAB1/xschem$ngspice
+   
 ```
 
-![1](https://github.com/Arunnimmala07/msvsd2stepadc/blob/main/ngspice.png)
-
-
-
-
-
-
+![ngspice](https://user-images.githubusercontent.com/123537301/219946106-8bf16051-8072-4a81-a456-545f2f8c61fb.png)
 
 
 # IV. Create inverter and perform pre-layout using xschem 
