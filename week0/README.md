@@ -11,7 +11,7 @@
 
 # week 0
 ---
-# I: Operating system installion  
+# I: Operating system (os)installion  
 
 In the week 0: we have to install linux Operting System: I installed: Ubuntu 20.04. 
 
@@ -19,10 +19,10 @@ Then, We need to install following softwares or tools.
 
 |	S .No.|Software|	Description|
 | --- | --- | ---|
-|1	|magic|	Layout Editor|
-|2	|ngspice	|SPICE Simulation|
-|4	|xschem	|Schematic Editor|
-|3	|netgen	|Netlist comparator or LVS|
+|1	|MAGIC|	Layout Editor|
+|2	|NGSPICE|SPICE Simulation|
+|4	|XSCHEM	|Schematic Editor|
+|3	|NETGEN|Netlist comparator or LVS|
 |5	|Open PDK (Sky130)	|Sky130 library|
 |6	|ALIGN	|Automating Analog Layout|
 
@@ -30,7 +30,7 @@ Then, We need to install following softwares or tools.
 
        A). MAGIC, B). NETGEN, C). XSCHEM, D). NGSPICE, E). OPEN_PDKs (SKY130) and F). ALIGN
 
-# II: Software Installation
+# II: Software or Tools Installation
 ---
 
 - First update ubuntu with command 
@@ -387,8 +387,10 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl .
 
 ![ngspice](https://user-images.githubusercontent.com/123537301/219946106-8bf16051-8072-4a81-a456-545f2f8c61fb.png)
 
+# Now we are ready to perform the simulations 
 
-# IV. Create inverter and perform pre-layout using xschem 
+
+# IV. (a) Create inverter and perform pre-layout using xschem 
 ---
 
 ![Screenshot from 2023-02-14 02-57-22](https://user-images.githubusercontent.com/123537301/219945278-c089f8b5-21a7-4c60-926a-fe0a896f79f9.png)
@@ -406,7 +408,9 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl .
 ![Screenshot from 2023-02-14 03-56-31](https://user-images.githubusercontent.com/123537301/219945311-d00e83a3-dc0a-4529-9f19-aae6622e8f0c.png)
 
 
-# V. Create inverter and perform pre-layout using ngspice 
+# IV. (b) Create inverter and perform pre-layout using ngspice 
+
+The tech file ['min2.tech']() and model file used [130nm BSIM4 model card for bulk CMOS](http://ptm.asu.edu/modelcard/2006/130nm_bulk.pm) has been for simulation of inverter and boolean function in the next section.
 
 ````
 *SPICE3 file created for inverter pre-layout simulation
@@ -441,20 +445,9 @@ run
 
 ![Screenshot from 2023-02-19 15-50-33](https://user-images.githubusercontent.com/123537301/219944782-96d02855-7ee3-46c5-a3ee-58206f4f914a.png)
 
-
-# VI. Simulation of Inverter using Ngspice
-
-The tech file ['min2.tech']() and model file used [130nm BSIM4 model card for bulk CMOS](http://ptm.asu.edu/modelcard/2006/130nm_bulk.pm) has been for simulation of inverter and boolean function in the next section.
-
-## VI.a. Pre-layout Simulation of Inverter using Ngspice
-The figure shown the pre-layout netlist of the inverter
-
-![image](https://user-images.githubusercontent.com/104830557/218102867-11f3b0fd-0f88-41c6-8e6e-430f0f9a5224.png)
-
-
 ![image](https://user-images.githubusercontent.com/104830557/218084345-fe34ce3e-eea0-4c61-a677-79e4abebec33.png)
 
-## VI.b. Post-layout Simulation of Inverter using Ngspice
+# IV. (c) Post-layout Simulation of Inverter using Ngspice
 The layout  'inv.mag' was drawn in Magic as shown.
 ![image](https://user-images.githubusercontent.com/104830557/218103878-9ff2a9bf-27ee-4a01-b286-c82596e604c9.png)
 
@@ -472,7 +465,7 @@ Use `ngspice inv.spice`and `plot out vs time in` to get the following plot.
 
 ![image](https://user-images.githubusercontent.com/104830557/218082285-c7cc110d-a2ef-4f98-93bc-f9784ff3692e.png)
 
-## VI.c. Comparison of Pre-layout and Post-layout timing parameters for inverter.
+# IV. (e) Comparison of Pre-layout and Post-layout timing parameters for inverter.
 
 | Parameter    | Value from Pre-layout Simulation| Value from Post-layout Simulation|
 |----------|-----|-----|
@@ -502,12 +495,13 @@ Cells have no pins;  pin matching not needed.
 Device classes INV_pre.spice and INV_post.spice are equivalent.
 Final result: Netlists do not match.
 
-# VII. Simulation of a function using Magic and Ngspice
+# V. Simulation of a function using Magic and Ngspice
+
 Euler path and stick diagrams are helpful for getting better layouts for circuits with many MOSFETs. One such funtion is implemented here using CMOS.
 Fn = Fn= [(B+D).(A+C)+E.F]'
 ![image](https://user-images.githubusercontent.com/104830557/218004046-205b15ce-bafd-4023-b527-9591cad9ea42.png)
 
-## VII.a Pre-layout Simulation of function Fn using Ngspice
+## V. (a) Pre-layout Simulation of function Fn using Ngspice
 
 The netlist `fn_prelayout.spice` for the function **Fn** given can be written as 
 ```
@@ -554,7 +548,7 @@ Run the ngspice simulation using the following commands.
 ```
 ![image](https://user-images.githubusercontent.com/104830557/218006311-1a970c75-bc35-4d2d-9d40-a701253359c6.png)
 
-## VII.b Post-layout Simulation of function Fn using Magic and Ngspice
+# V.(b) Post-layout Simulation of function Fn using Magic and Ngspice
 ![image](https://user-images.githubusercontent.com/104830557/218008163-b35a4fea-e8f9-4428-a76f-b2da4c400984.png)
 
 Extract the netlist from the from the magic layout by typing these commands in tkcon 2.3 Main console.
@@ -620,7 +614,7 @@ Run the ngspice simulation using the following commands.
 ```
 ![image](https://user-images.githubusercontent.com/104830557/218010876-af06f84e-8d51-47b2-8ded-4adda43f5560.png)
 
-## VI.c. Comparison of results
+# V. (c) Comparison of results
 We can note that the graph of out vs time for both pre-layout simulation and post layout simulation are similar. Pre-layout simulation considers zero net delays and parasitic capacitances, hence the timing values are more optimistic. Post- layout simulation includes parasitic capacitance and non-zero netdelays, hence the timing values are more accurate.
 ## VI.d LVS Report
 
