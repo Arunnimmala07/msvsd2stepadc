@@ -450,7 +450,7 @@ run
 
 ![image](https://user-images.githubusercontent.com/104830557/218084345-fe34ce3e-eea0-4c61-a677-79e4abebec33.png)
 
-# IV. (c) Post-layout Simulation of Inverter using Magic
+# IV. (c) Post-layout Simulation of Inverter using Magic and Ngspice
 
 We can draw the layout of the inverter by using the **MAGIC** tool or simple import the **SPICE netlist (generated from XSCHEM)** file to **MAGIC** tool 
 
@@ -466,13 +466,13 @@ ext2spice rthesh 0 cthresh 0
 ext2spice
 ```
 
-Simulate the spice file extracted from magic after modifications. 
+The extracted netlist file from  the **MAGIC** now run it in the **NGSPICE**  after modifications. 
 
 ![image](https://user-images.githubusercontent.com/104830557/218105205-85ed2b21-1df1-4640-b39d-b40c4257add0.png)
 
-Use `ngspice inv.spice`and `plot out vs time in` to get the following plot.
 
 ![image](https://user-images.githubusercontent.com/104830557/218082285-c7cc110d-a2ef-4f98-93bc-f9784ff3692e.png)
+
 
 # IV. (d) Comparison of Pre-layout and Post-layout, timing parameters for inverter.
 
