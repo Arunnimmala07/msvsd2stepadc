@@ -9,13 +9,15 @@
 |6.|[Function post-layout simulation using Magic/ngspice and SKY130 PDK](https://github.com/prajwalita17/msvsd8tsram/edit/main/Week1/README.md#3b-post-layout-characterization-using-magicngspice)|Done|
 |7.|[Function post-layout simulation using ALIGN](https://github.com/prajwalita17/msvsd8tsram/edit/main/Week1/README.md#3c-post-layout-characterization-using-align-tool)|Pending|
 
-## 1. ALIGN installation
+# I. ALIGN installation
 ALIGN is an open source automatic layout generator for analog circuits. Install ALIGN and all its dependencies using the following commands.
 
 I have installed in the **week 0** 
 
-## 2. Simulation of CMOS Inverter 
-### 2.a. Pre-layout Characterization using Xschem/Ngspice
+# II. Simulation of CMOS Inverter 
+
+## II. (a) Pre-layout Characterization using Xschem/Ngspice
+
 <img width="583" alt="inverter schematic" src="https://user-images.githubusercontent.com/104830557/219540453-82d875e9-9916-4fb7-84fb-2c933e35038f.png">
 
 <img width="980" alt="inverter subcircuit" src="https://user-images.githubusercontent.com/104830557/219540467-06e5482f-fa8b-4ebe-9d1a-9032add1af5c.png">
@@ -103,7 +105,8 @@ ngspice 2 -> plot a y
    
 <img width="1054" alt="inverter pre layout" src="https://user-images.githubusercontent.com/104830557/219746239-b5ed75ce-b48d-4359-b863-813b4c1d572b.png">
 
-### 2.b. Post-layout Characterization using Magic/Ngspice
+## II. (b) Post-layout Characterization using Magic/Ngspice
+
 ```
 
 
@@ -122,7 +125,8 @@ ext2spice
 
 <img width="1013" alt="post layout inv wave" src="https://user-images.githubusercontent.com/104830557/219742682-68b26dec-ab23-4eed-8d5b-3a430d6cd74e.png">
 
-### 2.c. Post-layout Characterization using ALign Tool
+## II. (c) Post-layout Characterization using ALign Tool
+
 ```
 .subckt inv A B vdd vss
 XM1 B A vdd vdd sky130_fd_pr__pfet_01v8 w=21e-7 l=0.15n nf=10 m=1
@@ -218,15 +222,17 @@ x0 = 1.74118e-08, y0 = 0.179487
 <img width="1013" alt="image" src="https://user-images.githubusercontent.com/104830557/219606263-05d06b25-4215-4815-ac47-25975a15d21e.png">
 
 
-## 3. Simulation of Function 
-### 3.a. Pre-layout Characterization using Xschem/Ngspice
+# III. Simulation of Function 
+
+## III. (a) Pre-layout Characterization using Xschem/Ngspice
+
 <img width="526" alt="function schematic" src="https://user-images.githubusercontent.com/104830557/219541683-9e8ceb22-edb7-4612-86a2-fab51911d96d.png">
 <img width="1150" alt="function subcircuit" src="https://user-images.githubusercontent.com/104830557/219541693-9fc49481-a42f-4c22-9e1f-dccb691ea7db.png">
 
 
 
 
-### 3.b. Post-layout Characterization using Magic/Ngspice
+## III. (b) Post-layout Characterization using Magic/Ngspice
 
 <img width="1202" alt="image" src="https://user-images.githubusercontent.com/104830557/219727444-4fea077e-af22-4450-aa66-1b1d15e42b4d.png">
 
@@ -720,7 +726,7 @@ ngspice 4 ->
 ![image](https://user-images.githubusercontent.com/104830557/218010876-af06f84e-8d51-47b2-8ded-4adda43f5560.png)
 
 
-### 3.c. Post-layout Characterization using Align Tool
+## III. (c) Post-layout Characterization using Align Tool
 
 
 
