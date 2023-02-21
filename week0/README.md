@@ -401,9 +401,12 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl .
 
 ![Screenshot from 2023-02-14 03-35-45](https://user-images.githubusercontent.com/123537301/219945299-4f79fd2a-8ce9-4ce3-bf0e-16ab2464616c.png)
 
+
 ![Screenshot from 2023-02-14 03-56-44](https://user-images.githubusercontent.com/123537301/219945325-4ccdff22-7aec-4dcb-bf65-625a04c6d9b6.png)
 
+
 ![Screenshot from 2023-02-14 03-56-36](https://user-images.githubusercontent.com/123537301/219945319-61453f91-174f-45c1-9cd8-38afdf3d07ec.png)
+
 
 ![Screenshot from 2023-02-14 03-56-31](https://user-images.githubusercontent.com/123537301/219945311-d00e83a3-dc0a-4529-9f19-aae6622e8f0c.png)
 
@@ -447,16 +450,22 @@ run
 
 ![image](https://user-images.githubusercontent.com/104830557/218084345-fe34ce3e-eea0-4c61-a677-79e4abebec33.png)
 
-# IV. (c) Post-layout Simulation of Inverter using Ngspice
+# IV. (c) Post-layout Simulation of Inverter using Magic
+
+We can draw the layout of the inverter by using the **MAGIC** tool or simple import the **SPICE netlist (generated from XSCHEM)** file to **MAGIC** tool 
+
 The layout  'inv.mag' was drawn in Magic as shown.
+
 ![image](https://user-images.githubusercontent.com/104830557/218103878-9ff2a9bf-27ee-4a01-b286-c82596e604c9.png)
 
 Extract the netlist from the layout using
+
 ```
 extract all
 ext2spice rthesh 0 cthresh 0
 ext2spice
 ```
+
 Simulate the spice file extracted from magic after modifications. 
 
 ![image](https://user-images.githubusercontent.com/104830557/218105205-85ed2b21-1df1-4640-b39d-b40c4257add0.png)
@@ -465,7 +474,7 @@ Use `ngspice inv.spice`and `plot out vs time in` to get the following plot.
 
 ![image](https://user-images.githubusercontent.com/104830557/218082285-c7cc110d-a2ef-4f98-93bc-f9784ff3692e.png)
 
-# IV. (e) Comparison of Pre-layout and Post-layout timing parameters for inverter.
+# IV. (d) Comparison of Pre-layout and Post-layout, timing parameters for inverter.
 
 | Parameter    | Value from Pre-layout Simulation| Value from Post-layout Simulation|
 |----------|-----|-----|
@@ -473,7 +482,9 @@ Use `ngspice inv.spice`and `plot out vs time in` to get the following plot.
 |Fall Time|25.01 ps|26.97 ps|
 |Cell Rise Delay|32.79 ps|41.29 ps|
 |Cell Fall Delay|4.3 ps|4.4 ps|
-## VI.d LVS Report
+
+# IV. (e) LVS Report
+
 The layout vs schematic compares the pre-layout netlist with the netlist extracted from the layout. The mismatch is due to the extra parasitic capacitances in the post-layout netlist. The report `comp.out` is obtained using Netgen by typing the following command.
 ```
 ~/VSD_2stepadc/LAB1/netgen$ netgen -batch lvs INV_pre.spice INV_post.spice
@@ -499,11 +510,13 @@ Final result: Netlists do not match.
 
 Euler path and stick diagrams are helpful for getting better layouts for circuits with many MOSFETs. One such funtion is implemented here using CMOS.
 Fn = Fn= [(B+D).(A+C)+E.F]'
+
 ![image](https://user-images.githubusercontent.com/104830557/218004046-205b15ce-bafd-4023-b527-9591cad9ea42.png)
 
-## V. (a) Pre-layout Simulation of function Fn using Ngspice
+# V. (a) Pre-layout Simulation of function Fn using Ngspice
 
 The netlist `fn_prelayout.spice` for the function **Fn** given can be written as 
+
 ```
 ***Netlist description for prelayout simulation***
 M1 3 a vdd vdd pmos W=2.125u L=0.25u
@@ -538,17 +551,22 @@ V6 f 0 0 pulse 0 2.5 0.6n 10p 10p 1n 2n
 .include my_model_file.mod
 .end
 ```
+
 Run the ngspice simulation using the following commands.
+
 ```
     $ngspice fn_prelayout.spice
+    
 ```
 ```
     ngspice 2 -> run
     ngspice 3 -> plot out
 ```
+
 ![image](https://user-images.githubusercontent.com/104830557/218006311-1a970c75-bc35-4d2d-9d40-a701253359c6.png)
 
 # V.(b) Post-layout Simulation of function Fn using Magic and Ngspice
+
 ![image](https://user-images.githubusercontent.com/104830557/218008163-b35a4fea-e8f9-4428-a76f-b2da4c400984.png)
 
 Extract the netlist from the from the magic layout by typing these commands in tkcon 2.3 Main console.
@@ -612,11 +630,14 @@ Run the ngspice simulation using the following commands.
     ngspice 2 -> run
     ngspice 3 -> plot out
 ```
+
 ![image](https://user-images.githubusercontent.com/104830557/218010876-af06f84e-8d51-47b2-8ded-4adda43f5560.png)
 
 # V. (c) Comparison of results
+
 We can note that the graph of out vs time for both pre-layout simulation and post layout simulation are similar. Pre-layout simulation considers zero net delays and parasitic capacitances, hence the timing values are more optimistic. Post- layout simulation includes parasitic capacitance and non-zero netdelays, hence the timing values are more accurate.
-## VI.d LVS Report
+
+# V. (d) LVS Report
 
 The layout vs schematic compares the pre-layout netlist with the netlist extracted from the layout. The mismatch is due to the extra parasitic capacitances in the post-layout netlist. The report `comp.out` is obtained using Netgen by typing the following command.
 ```
