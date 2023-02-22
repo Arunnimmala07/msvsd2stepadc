@@ -563,7 +563,7 @@ Run the ngspice simulation using the following commands.
     ngspice 3 -> plot out
 ```
 
-![image](https://user-images.githubusercontent.com/104830557/218006311-1a970c75-bc35-4d2d-9d40-a701253359c6.png)
+![Screenshot from 2023-02-22 18-05-37](https://user-images.githubusercontent.com/123537301/220631350-3753b807-a8f3-4401-a217-b201e324d1eb.png)
 
 # V.(b) Post-layout Simulation of function Fn using Magic and Ngspice
 
@@ -572,6 +572,7 @@ Run the ngspice simulation using the following commands.
 Extract the netlist from the from the magic layout by typing these commands in tkcon 2.3 Main console.
 
 ![image](https://user-images.githubusercontent.com/104830557/218009160-0503c4c0-659b-4349-92e5-3644f0f54bc8.png)
+
 The netlist `fn_postlayout.spice` generated is as shown. The netlist shows the parasitic capacitances also. Model file is same as the one used for pre-layout simulation. 
 
 ```
@@ -631,7 +632,7 @@ Run the ngspice simulation using the following commands.
     ngspice 3 -> plot out
 ```
 
-![image](https://user-images.githubusercontent.com/104830557/218010876-af06f84e-8d51-47b2-8ded-4adda43f5560.png)
+![Screenshot from 2023-02-22 18-05-37](https://user-images.githubusercontent.com/123537301/220631350-3753b807-a8f3-4401-a217-b201e324d1eb.png)
 
 # V. (c) Comparison of results
 
